@@ -36,7 +36,7 @@
 }
 
 .description { /* esto es para el párrafo de descripción */
-    font-size: 18px; /* Tamaño del texto */
+    font-size: 20px; /* Tamaño del texto */
     line-height: 1.6; /* Espaciado entre líneas del texto */
     color: #bfc6cea4; /* Gris claro */
     max-width: 700px; /* Limita el ancho del párrafo */
@@ -54,9 +54,9 @@
     padding: 14px 28px; /* esto es para el espacio dentro del botón, 14px es el espacio vertical y 28px el horizontal */
     border-radius: 12px; /* para que los botones sean redondeados */
     border: 1px solid rgb(174, 79, 11); /* esto es para el borde de los botones */
-    background: rgba(125, 79, 66, 0.361); /* Fondo de los botones con transparencia */
+    background: linear-gradient(145deg, #f79412, #302824); /* fondo de los botones Videos para Redes y Creacion con IA */
     color: #ffffff; /* Texto blanco */
-    font-size: 14px; /* Tamaño del texto */
+    font-size: 20px; /* Tamaño del texto */
     text-decoration: none; /* para que no se vea la línea debajo del texto ya que es un enlace */
     transition: all 0.9s ease; /* para que los cambios al pasar el ratón sean suaves */
 }
@@ -67,3 +67,120 @@
     color: black; /* Texto negro al pasar el ratón */
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.libreria_agencia { /* es el contenedor principal de la seccion de librería y agencia */
+    padding: 20px; /* este padding es para que no toque los bordes */
+}
+
+.pagina { /* Contenedor de los enlaces de las páginas Tu Librería y Agencia de Viajes */
+    display: flex; /* es para que los dos bloques que llevan a las páginas estén alineados horizontalmente */
+    justify-content: center; /* para que esten centrados horizontalmente */
+    gap: 18px; /* es el espacio entre los bloques */
+    margin-bottom: 50px; /* espacio inferior del contenedor de los enlaces */
+}
+
+.pagina a { /* Estilo para los enlaces de las páginas Tu Librería y Agencia de Viajes */
+    padding: 16px 28px; /* es el espacio dentro de los bloques de Tu Librería y Agencia de Viajes */
+    border-radius: 16px; /* para que los dos botones de Tu Librería y Agencia de Viajes sean redondeados */
+    text-decoration: none; /* para que no se vea la línea debajo del texto ya que es un enlace */
+    border: 1px solid #cd640fd1; /* borde de los bloques */
+    color: white; /* color del texto de los bloques */
+    font-size: 20px; /* tamaño de la fuente de los bloques */
+}
+
+.pagina a.libreria { /* es el estilo del bloque de Tu Librería */
+    background: rgba(231, 113, 11, 0.974);
+}
+
+.pagina a.active.viajes { /* es el estilo del bloque de Agencia de Viajes */
+    background: #39c6c3;
+}
+
+.titulo { /* titulo principal: Tu Librería */
+    text-align: center; /* para que el título Tu libreria esté centrado */
+    margin-bottom: 18px; /* espacio inferior del título */
+    font-family: 'Playfair Display', serif; /* fuente del título */
+    font-size: 52px; /* tamaño de la fuente */
+    color: rgba(231, 113, 11, 0.974); /* color del título */
+}
+
+.titulo.turquoise { /* titulo principal: Agencia de Viajes */
+    color: #39c6c3;
+}
+
+.des { /* descripción debajo del título de Tu Librería */
+    margin: 0 auto 30px; /* para centrar el párrafo y darle espacio inferior, el 0 es para que no tenga margen arriba, auto es para centrarlo y 30px es el margen de abajo */
+    text-align: center; /* para que el párrafo esté centrado */
+    color: #9aa0b3; /* color gris claro */
+    line-height: 1.6; /* espaciado entre líneas */
+    font-size: 20px;
+}
+
+.cuadroo { /* bloque: de Herramientas Utilizadas y Objetivo del Cliente */
+    background: linear-gradient(145deg, #ee89057e, #edd26594); /* el color de fondo de los bloques de Herramientas Utilizadas y Objetivo del Cliente */
+    border-radius: 16px; /* para que los bloques sean redondeados */
+    padding: 25px; /* espacio dentro de los bloques Herramientas Utilizadas y Objetivo del Cliente */
+    margin-bottom: 30px; /* espacio inferior de los bloques */ 
+    border: 1px solid rgba(213, 128, 15, 0.849); /* el color de borde de los bloques */
+}
+
+.cuadroo h3 { /* los títulos de los bloques Herramientas Utilizadas y Objetivo del Cliente */
+    font-family: 'Playfair Display', serif; /* fuente de los títulos */
+    font-size: 26px; /* tamaño de la fuente */
+    margin-bottom: 22px; /* espacio inferior de los títulos */
+}
+
+.contenedor_etiquetas { /* contenedor de las etiquetas de las herramientas */
+    display: flex; /* para que las etiquetas estén alineadas horizontalmente */
+    flex-wrap: wrap; /* para que las etiquetas se ajusten en pantallas pequeñas y que no salgan de la pantalla */
+    gap: 14px; /* espacio entre las etiquetas */
+}
+
+.etiqueta { /* estilo de cada etiqueta que son ChatGPT, Runway ML, ElevenLabs, Canva y CapCut */
+    padding: 10px 16px; /* espacio dentro de cada etiqueta. 10px es el espacio vertical y 16px el horizontal */
+    border-radius: 999px; /* para que las etiquetas sean completamente redondeadas */
+    background: #10131a; /* color de fondo de las etiquetas */
+    border: 1px solid #db943d; /* color del borde de las etiquetas */
+    font-size: 14px; /* tamaño de la fuente de las etiquetas */
+}
+
+.grid { /* contenedor del bloque de Objetivo del Cliente */
+    display: grid; /* usamos grid para que se vean los dos cuadros uno al lado del otro */
+    grid-template-columns: 1fr 1fr; /* para que haya dos columnas de igual tamaño */
+    gap: 24px; /* espacio entre los cuadros */
+    line-height: 1.6;
+}
+
+.bloc { /* estilo de cada cuadro dentro del bloque de Objetivo del Cliente */
+    background: #10131a; /* color de fondo de los cuadros */
+    border-radius: 16px; /* para que los cuadros sean redondeados */
+    padding: 24px; /* espacio dentro de los cuadros */
+    letter-spacing: 1px;
+}
+
+.bloc span { /* estilo de los títulos dentro de los cuadros: AUDIENCIA, MENSAJE */
+    display: block; /* para que cada título esté en una línea separada */
+    margin-bottom: 10px; /* espacio inferior de los títulos */
+    font-size: 13px; /* tamaño de la fuente de los títulos */
+    color: #ff7a45; /* color de los títulos */
+    letter-spacing: 2px; /* espacio entre letras de los títulos */
+}
+
+.one { /* es el contenedor principal de la sección Método para Alcanzar el Objetivoe */
+  display: flex; /* usamos flex para alinear los elementos */
+  flex-direction: column; /* para que los elementos estén en columna */
+  gap: 15px; /* espacio entre los elementos */
+}
+
+.contenido h3 { /* estilo de los subtítulos dentro de cada punto del método */
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ff7a45;
+}
+
+.contenido p { /* estilo de los párrafos dentro de cada punto del método */
+  font-size: 15px;
+  line-height: 1.6;
+}
