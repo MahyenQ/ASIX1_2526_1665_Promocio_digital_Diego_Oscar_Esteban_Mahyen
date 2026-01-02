@@ -1,0 +1,69 @@
+* { /* este asterisco selecciona todos los elementos de la página */
+    margin: 0; /* esto es para poder controlar los márgenes que son los espacios fuera de los elementos */
+    padding: 0; /* para controlar los espacios dentro de los elementos */
+    box-sizing: border-box; /* esto hace que el padding no haga que el elemento se haga más grande */
+}
+
+.primer { /* estilos generales del body */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fuente principal */
+    color: #ffffff; /* Texto blanco */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background: #101418;/* Fondo con degradados suaves como en la imagen */
+}
+
+.cuadro { /* esto es la seccion central donde va todo el contenido */
+    min-height: 100vh; /* Pantalla completa */
+    display: flex; /* Usamos flex para centrar contenido */
+    align-items: center; /* para que el contenido se centre verticalmente */
+    justify-content: center; /* esto es para que el contenido se centre horizontalmente */
+    text-align: center; /* Texto centrado */
+    padding: 40px 20px; /* esto es para el espacio vertical y para el horizontal para que no toque los bordes y el cambio se ve cuando se hace más pequeña la pantalla */
+}
+
+.name { /* esto es para seleccionar el nombre Héctor */
+    font-family: 'Playfair Display', serif; /* para darle una fuente diferente */
+    font-size: 72px; /* Tamaño de la fuente */
+    font-weight: 700; /* Peso de la fuente */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.title { /* esto es para darle estilo al título Content Creator */
+    font-family: 'Playfair Display', serif; /* Misma fuente que el nombre */
+    font-size: 64px; /* tamaño de la fuente */
+    font-weight: 560; /* peso de la fuente */
+    color: #ff7a3d; /* color del título */
+    margin-bottom: 30px; /* Espacio inferior de Content Creator */
+}
+
+.description { /* esto es para el párrafo de descripción */
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas del texto */
+    color: #bfc6cea4; /* Gris claro */
+    max-width: 700px; /* Limita el ancho del párrafo */
+    margin: 0 auto 50px; /* esto es para centrar el párrafo y darle espacio inferior, el 0 es para que no tenga margen arriba, auto es para centrarlo y 50px es el margen de abajo */
+}
+
+.botones { /* son los estilos para el contenedor de los botones */
+    display: flex; /* para que los botones esten bien alineados */
+    gap: 20px; /* Espacio entre botones */
+    justify-content: center;/* para que los botones esten centrados horizontalmente */
+    flex-wrap: wrap; /* para que los botones se ajusten en pantallas pequeñas */
+}
+
+.boton { /* para cada botón */
+    padding: 14px 28px; /* esto es para el espacio dentro del botón, 14px es el espacio vertical y 28px el horizontal */
+    border-radius: 12px; /* para que los botones sean redondeados */
+    border: 1px solid rgb(174, 79, 11); /* esto es para el borde de los botones */
+    background: rgba(125, 79, 66, 0.361); /* Fondo de los botones con transparencia */
+    color: #ffffff; /* Texto blanco */
+    font-size: 14px; /* Tamaño del texto */
+    text-decoration: none; /* para que no se vea la línea debajo del texto ya que es un enlace */
+    transition: all 0.9s ease; /* para que los cambios al pasar el ratón sean suaves */
+}
+
+.boton:hover {
+    background: #de5931; /* Fondo naranja al pasar el ratón */
+    border-color: #ffba0bd2; /* Borde naranja al pasar el ratón */
+    color: black; /* Texto negro al pasar el ratón */
+}
+
