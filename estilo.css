@@ -12,6 +12,7 @@
 }
 
 .cuadro { /* esto es la seccion central donde va todo el contenido */
+    display: flex; /* es para que los elementos dentro del contenedor se alineen en fila */
     justify-content: center; /* esto es para que el contenido se centre horizontalmente */
     text-align: center; /* Texto centrado */
     padding: 40px 20px; /* esto es para el espacio vertical y para el horizontal para que no toque los bordes y el cambio se ve cuando se hace más pequeña la pantalla */
@@ -30,6 +31,7 @@
     font-weight: 560; /* peso de la fuente */
     color: #ff7a3d; /* color del título */
     margin-bottom: 30px; /* Espacio inferior de Content Creator */
+    margin-top: 20px; /* Espacio superior de Content Creator */
 }
 
 .description { /* esto es para el párrafo de descripción */
