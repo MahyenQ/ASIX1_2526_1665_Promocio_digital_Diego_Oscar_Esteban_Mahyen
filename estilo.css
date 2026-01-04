@@ -12,9 +12,6 @@
 }
 
 .cuadro { /* esto es la seccion central donde va todo el contenido */
-    min-height: 100vh; /* Pantalla completa */
-    display: flex; /* Usamos flex para centrar contenido */
-    align-items: center; /* para que el contenido se centre verticalmente */
     justify-content: center; /* esto es para que el contenido se centre horizontalmente */
     text-align: center; /* Texto centrado */
     padding: 40px 20px; /* esto es para el espacio vertical y para el horizontal para que no toque los bordes y el cambio se ve cuando se hace más pequeña la pantalla */
@@ -120,9 +117,10 @@
 .cuadroo { /* bloque: de Herramientas Utilizadas y Objetivo del Cliente */
     background: linear-gradient(145deg, #ee89057e, #edd26594); /* el color de fondo de los bloques de Herramientas Utilizadas y Objetivo del Cliente */
     border-radius: 16px; /* para que los bloques sean redondeados */
-    padding: 25px; /* espacio dentro de los bloques Herramientas Utilizadas y Objetivo del Cliente */
-    margin-bottom: 30px; /* espacio inferior de los bloques */ 
-    border: 1px solid rgba(213, 128, 15, 0.849); /* el color de borde de los bloques */
+    padding: 20px; /* espacio dentro de los bloques Herramientas Utilizadas y Objetivo del Cliente */
+    border: 1.9px solid rgba(213, 128, 15, 0.849); /* el color de borde de los bloques */
+    max-width: 90%;
+    margin: 0 auto 20px; /* para centrar los bloques y darle espacio inferior. El 0 es para que no tenga margen arriba, auto es para centrarlo y 40px es el margen de abajo */
 }
 
 .cuadroo h3 { /* los títulos de los bloques Herramientas Utilizadas y Objetivo del Cliente */
@@ -162,7 +160,7 @@
 .bloc span { /* estilo de los títulos dentro de los cuadros: AUDIENCIA, MENSAJE */
     display: block; /* para que cada título esté en una línea separada */
     margin-bottom: 10px; /* espacio inferior de los títulos */
-    font-size: 13px; /* tamaño de la fuente de los títulos */
+    font-size: 17px; /* tamaño de la fuente de los títulos */
     color: #ff7a45; /* color de los títulos */
     letter-spacing: 2px; /* espacio entre letras de los títulos */
 }
