@@ -12,8 +12,10 @@
 }
 
 .cuadro { /* esto es la seccion central donde va todo el contenido */
-    display: flex; /* es para que los elementos dentro del contenedor se alineen en fila */
-    justify-content: center; /* esto es para que el contenido se centre horizontalmente */
+    align-items: center; /* para que los elementos dentro del contenedor se centren verticalmente */
+    min-height: 100vh; /* para que ocupe toda la altura de la pantalla */
+    display: flex; /* para que los elementos dentro del contenedor se alineen en columna */
+    justify-content: center; /*esto es para que el contenido se centre horizontalmente */
     text-align: center; /* Texto centrado */
     padding: 40px 20px; /* esto es para el espacio vertical y para el horizontal para que no toque los bordes y el cambio se ve cuando se hace más pequeña la pantalla */
 }
@@ -32,6 +34,13 @@
     color: #ff7a3d; /* color del título */
     margin-bottom: 30px; /* Espacio inferior de Content Creator */
     margin-top: 20px; /* Espacio superior de Content Creator */
+    font-style: italic; /* para que el título esté en cursiva */
+}
+
+.portofolio { /* esto es para el texto PORTFOLIO DE CREACIÓN CON IA */
+    font-size: 15px; /* tamaño de la fuente */
+    color: #ff7a45; /* color del texto */
+    letter-spacing: 2px; /* espacio entre letras */
 }
 
 .description { /* esto es para el párrafo de descripción */
@@ -50,18 +59,17 @@
 }
 
 .boton { /* para cada botón */
-    padding: 14px 28px; /* esto es para el espacio dentro del botón, 14px es el espacio vertical y 28px el horizontal */
-    border-radius: 12px; /* para que los botones sean redondeados */
+    padding: 10px 20px; /* esto es para el espacio dentro del botón, 10px es el espacio vertical y 20px el horizontal */
+    border-radius: 99px; /* para que los botones sean redondeados */
     border: 1px solid rgb(174, 79, 11); /* esto es para el borde de los botones */
-    background: linear-gradient(145deg, #f79412, #302824); /* fondo de los botones Videos para Redes y Creacion con IA */
+    background: linear-gradient(145deg, #f79412, #302824); /* fondo de los botones Videos para Redes y Creacion con IA. 145deg hace que el degradado vaya de arriba a la derecha hacia abajo a la izquierda */
     color: #ffffff; /* Texto blanco */
     font-size: 20px; /* Tamaño del texto */
     text-decoration: none; /* para que no se vea la línea debajo del texto ya que es un enlace */
-    transition: all 0.9s ease; /* para que los cambios al pasar el ratón sean suaves */
+    transition: all 0.5s ease; /* para que los cambios al pasar el ratón sean suaves */
 }
 
 .boton:hover {
-    background: #de5931; /* Fondo naranja al pasar el ratón */
     border-color: #ffba0bd2; /* Borde naranja al pasar el ratón */
     color: black; /* Texto negro al pasar el ratón */
 }
@@ -117,7 +125,7 @@
 }
 
 .cuadroo { /* bloque: de Herramientas Utilizadas y Objetivo del Cliente */
-    background: linear-gradient(145deg, #ee89057e, #edd26594); /* el color de fondo de los bloques de Herramientas Utilizadas y Objetivo del Cliente */
+    background: linear-gradient(145deg, #1b51a77e, #85653f94); /* el color de fondo de los bloques de Herramientas Utilizadas y Objetivo del Cliente */
     border-radius: 16px; /* para que los bloques sean redondeados */
     padding: 20px; /* espacio dentro de los bloques Herramientas Utilizadas y Objetivo del Cliente */
     border: 1.9px solid rgba(213, 128, 15, 0.849); /* el color de borde de los bloques */
@@ -167,20 +175,87 @@
     letter-spacing: 2px; /* espacio entre letras de los títulos */
 }
 
+.bloc p { /* estilo de las listas dentro de los cuadros */
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 15px;
+}
+
+.bloc ul { /* estilo de las listas dentro de los cuadros */
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 15px;
+}
+
 .one { /* es el contenedor principal de la sección Método para Alcanzar el Objetivoe */
   display: flex; /* usamos flex para alinear los elementos */
   flex-direction: column; /* para que los elementos estén en columna */
   gap: 15px; /* espacio entre los elementos */
 }
 
-.contenido h3 { /* estilo de los subtítulos dentro de cada punto del método */
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #ff7a45;
+.contenido p { /* estilo de los párrafos dentro de cada punto del método */
+  font-size: 15px; 
+  line-height: 1.6;
 }
 
-.contenido p { /* estilo de los párrafos dentro de cada punto del método */
-  font-size: 15px;
-  line-height: 1.6;
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* LA PAGINA DE AGENCIA DE VIAJES */
+
+.pagina a.agencia { /* es el estilo del bloque de Agencia de Viajes */
+    background: rgba(9, 162, 183, 0.974);
+}
+
+.titule { /* titulo principal: Tu Librería */
+    text-align: center; /* para que el título Tu libreria esté centrado */
+    margin-bottom: 18px; /* espacio inferior del título */
+    font-family: 'Playfair Display', serif; /* fuente del título */
+    font-size: 52px; /* tamaño de la fuente */
+    color: rgba(9, 162, 183, 0.974); /* color del título */
+}
+
+.cuadri { /* bloque: de Herramientas Utilizadas y Objetivo del Cliente */
+    background: linear-gradient(145deg, #659af07e, #84e8de94); /* el color de fondo de los bloques de Herramientas Utilizadas y Objetivo del Cliente */
+    border-radius: 16px; /* para que los bloques sean redondeados */
+    padding: 20px; /* espacio dentro de los bloques Herramientas Utilizadas y Objetivo del Cliente */
+    border: 1.9px solid rgba(15, 213, 213, 0.849); /* el color de borde de los bloques */
+    max-width: 90%; /* hace que los bloques no se salgan de la pantalla */
+    margin: 0 auto 20px; /* para centrar los bloques y darle espacio inferior. El 0 es para que no tenga margen arriba, auto es para centrarlo y 40px es el margen de abajo */
+}
+
+.cuadri h3 { /* los títulos de los bloques Herramientas Utilizadas y Objetivo del Cliente */
+    font-family: 'Playfair Display', serif; /* fuente de los títulos */
+    font-size: 26px; /* tamaño de la fuente */
+    margin-bottom: 22px; /* espacio inferior de los títulos */
+}
+
+.etiquetas { /* estilo de cada etiqueta que son ChatGPT, Runway ML, ElevenLabs, Canva y CapCut */
+    padding: 10px 16px; /* espacio dentro de cada etiqueta. 10px es el espacio vertical y 16px el horizontal */
+    border-radius: 999px; /* para que las etiquetas sean completamente redondeadas */
+    background: #10131a; /* color de fondo de las etiquetas */
+    border: 1px solid #40db3d; /* color del borde de las etiquetas */
+    font-size: 14px; /* tamaño de la fuente de las etiquetas */
+}
+
+.bloce { /* estilo de cada cuadro dentro del bloque de Objetivo del Cliente */
+    background: #10131a; /* color de fondo de los cuadros */
+    border-radius: 16px; /* para que los cuadros sean redondeados */
+    padding: 24px; /* espacio dentro de los cuadros */
+    letter-spacing: 1px;
+}
+
+.bloce p { /* estilo de las listas dentro de los cuadros */
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 15px;
+}
+
+.bloce ul { /* estilo de las listas dentro de los cuadros */
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 15px;
+}
+
+.bloce span { /* estilo de los títulos dentro de los cuadros: AUDIENCIA, MENSAJE */
+    display: block; /* para que cada título esté en una línea separada */
+    margin-bottom: 10px; /* espacio inferior de los títulos */
+    font-size: 17px; /* tamaño de la fuente de los títulos */
+    color: #12d36f; /* color de los títulos */
+    letter-spacing: 2px; /* espacio entre letras de los títulos */
 }
