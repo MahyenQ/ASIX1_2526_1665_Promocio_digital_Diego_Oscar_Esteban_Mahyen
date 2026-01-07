@@ -25,6 +25,7 @@
     font-size: 72px; /* Tamaño de la fuente */
     font-weight: 700; /* Peso de la fuente */
     margin-bottom: 20px; /* Espacio inferior */
+    text-shadow: 0 0 10px #d67214, 0 0 20px #ffffff; /* para darle un efecto de resplandor al nombre */
 }
 
 .title { /* esto es para darle estilo al título Content Creator */
@@ -92,12 +93,20 @@
     border-radius: 16px; /* para que los dos botones de Tu Librería y Agencia de Viajes sean redondeados */
     text-decoration: none; /* para que no se vea la línea debajo del texto ya que es un enlace */
     border: 1px solid #cd640fd1; /* borde de los bloques */
-    color: white; /* color del texto de los bloques */
     font-size: 20px; /* tamaño de la fuente de los bloques */
 }
 
-.pagina a.libreria { /* es el estilo del bloque de Tu Librería */
+.libreria { /* es el estilo del bloque de Tu Librería */
+    color: white;
     background: rgba(231, 113, 11, 0.974);
+}
+
+.white { /* es el estilo del bloque de Agencia de Viajes */
+    color: black;
+}
+
+.white:hover { /* para que cambie de color al pasar el ratón por encima del bloque de Agencia de Viajes */
+    color: white;
 }
 
 .pagina a.active.viajes { /* es el estilo del bloque de Agencia de Viajes */
@@ -125,32 +134,38 @@
 }
 
 .cuadroo { /* bloque: de Herramientas Utilizadas y Objetivo del Cliente */
-    background: linear-gradient(145deg, #1b51a77e, #85653f94); /* el color de fondo de los bloques de Herramientas Utilizadas y Objetivo del Cliente */
+    background: linear-gradient(145deg, #c9995eb4, #1b51a77e);
     border-radius: 16px; /* para que los bloques sean redondeados */
     padding: 20px; /* espacio dentro de los bloques Herramientas Utilizadas y Objetivo del Cliente */
-    border: 1.9px solid rgba(213, 128, 15, 0.849); /* el color de borde de los bloques */
+    border: 1.9px solid rgba(213, 127, 15, 0.566); /* el color de borde de los bloques */
     max-width: 90%;
     margin: 0 auto 20px; /* para centrar los bloques y darle espacio inferior. El 0 es para que no tenga margen arriba, auto es para centrarlo y 40px es el margen de abajo */
 }
 
+.cuadroo:hover { /* para que cambie de color al pasar el ratón por encima de los bloques Herramientas Utilizadas, Objetivo del Cliente, Método para Alcanzar el Objetivo y Prompt */
+    background: linear-gradient(145deg, #1b51a77e, #c9995eb4);
+}
+
 .cuadroo h3 { /* los títulos de los bloques Herramientas Utilizadas y Objetivo del Cliente */
     font-family: 'Playfair Display', serif; /* fuente de los títulos */
-    font-size: 26px; /* tamaño de la fuente */
+    font-size: 30px; /* tamaño de la fuente */
     margin-bottom: 22px; /* espacio inferior de los títulos */
+    text-align: center; /* para que este en medio todo los títulos de los cuadros */
 }
 
 .contenedor_etiquetas { /* contenedor de las etiquetas de las herramientas */
     display: flex; /* para que las etiquetas estén alineadas horizontalmente */
     flex-wrap: wrap; /* para que las etiquetas se ajusten en pantallas pequeñas y que no salgan de la pantalla */
     gap: 14px; /* espacio entre las etiquetas */
+    justify-content: center; /* para que las etiquetas estén centradas horizontalmente */
 }
 
 .etiqueta { /* estilo de cada etiqueta que son ChatGPT, Runway ML, ElevenLabs, Canva y CapCut */
-    padding: 10px 16px; /* espacio dentro de cada etiqueta. 10px es el espacio vertical y 16px el horizontal */
+    padding: 15px 16px; /* espacio dentro de cada etiqueta. 10px es el espacio vertical y 16px el horizontal */
     border-radius: 999px; /* para que las etiquetas sean completamente redondeadas */
     background: #10131a; /* color de fondo de las etiquetas */
-    border: 1px solid #db943d; /* color del borde de las etiquetas */
-    font-size: 14px; /* tamaño de la fuente de las etiquetas */
+    border: 2px solid #db943d; /* color del borde de las etiquetas */
+    font-size: 18px; /* tamaño de la fuente de las etiquetas */
 }
 
 .grid { /* contenedor del bloque de Objetivo del Cliente */
@@ -196,12 +211,35 @@
   line-height: 1.6;
 }
 
+.footer { /* Estilo del contenido del footer de página */
+    text-align: center; /* Centrar el texto */
+    padding: 15px; /* Espacio dentro del pie de página */
+    background-color: #ff7a45; /* Color de fondo del pie de página */
+    color: black; /* Color del texto del pie de página */
+}
+
+.footer-links a { /* Estilo de los iconos del footer */
+    color: black; /* Color de los iconos */
+    margin: 10px; /* Espacio entre los iconos. 10px a la izquierda y 10px a la derecha */
+    font-size: 24px; /* Tamaño de los iconos */
+    text-decoration: none; /* Quitar subrayado */
+}
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* LA PAGINA DE AGENCIA DE VIAJES */
 
-.pagina a.agencia { /* es el estilo del bloque de Agencia de Viajes */
+.agencia { /* es el estilo del bloque de Agencia de Viajes */
+    color: white;
     background: rgba(9, 162, 183, 0.974);
+}
+
+.black { /* es el estilo del bloque de Tu Librería */
+    color: black;
+}
+
+.black:hover { /* para que cambie de color al pasar el ratón por encima del bloque de Tu Librería */
+    color: white;
 }
 
 .titule { /* titulo principal: Tu Librería */
@@ -221,18 +259,23 @@
     margin: 0 auto 20px; /* para centrar los bloques y darle espacio inferior. El 0 es para que no tenga margen arriba, auto es para centrarlo y 40px es el margen de abajo */
 }
 
+.cuadri:hover { /* para que cambie de color al pasar el ratón por encima de los bloques Herramientas Utilizadas, Objetivo del Cliente, Método para Alcanzar el Objetivo y Prompt */
+    background-color: #cf6e31; /* color amarillo flojo al pasar el ratón */
+}
+
 .cuadri h3 { /* los títulos de los bloques Herramientas Utilizadas y Objetivo del Cliente */
     font-family: 'Playfair Display', serif; /* fuente de los títulos */
-    font-size: 26px; /* tamaño de la fuente */
+    font-size: 30px; /* tamaño de la fuente */
     margin-bottom: 22px; /* espacio inferior de los títulos */
+    text-align: center;
 }
 
 .etiquetas { /* estilo de cada etiqueta que son ChatGPT, Runway ML, ElevenLabs, Canva y CapCut */
     padding: 10px 16px; /* espacio dentro de cada etiqueta. 10px es el espacio vertical y 16px el horizontal */
     border-radius: 999px; /* para que las etiquetas sean completamente redondeadas */
     background: #10131a; /* color de fondo de las etiquetas */
-    border: 1px solid #40db3d; /* color del borde de las etiquetas */
-    font-size: 14px; /* tamaño de la fuente de las etiquetas */
+    border: 2px solid #40db3d; /* color del borde de las etiquetas */
+    font-size: 18px; /* tamaño de la fuente de las etiquetas */
 }
 
 .bloce { /* estilo de cada cuadro dentro del bloque de Objetivo del Cliente */
